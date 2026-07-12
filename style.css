@@ -9,12 +9,17 @@ body{
     background-image: url(login-background-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+   min-height: 110vh;
+  
 }
 .nav{
+   
     display: flex;
     justify-content: space-between;
     padding: 10px;
     color: white;
+   
+   
 }
 .app-icon{
     display: flex;
