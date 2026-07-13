@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0%;
     box-sizing:border-box ;
-    flex-wrap: wrap;
+   
    
 }
 body{
@@ -10,6 +10,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
    min-height: 100vh;
+   background-attachment: fixed;
   
 }
 .nav{
@@ -18,7 +19,15 @@ body{
     justify-content: space-between;
     padding: 10px;
     color: white;
-   
+    background-color: black;
+      position: fixed;
+    top: 0;
+    left: 0;
+    flex-wrap: wrap;
+      width: 100%;
+      box-shadow: 0px 0px 100px rgba(245, 139, 236, 0.778);
+      z-index: 100;
+    
    
 }
 .app-icon{
@@ -35,6 +44,7 @@ border-radius: 50%;
 .icons{
     display: flex;
     cursor: pointer;
+    padding-top: 10px;
 
 }
 .icons i{
@@ -44,13 +54,14 @@ border-radius: 50%;
 }
 .input{
     margin: auto;
-    margin-top: 100px;
+    margin-top: 150px;
     border: 1px solid rgba(245, 245, 220, 0.358);
     border-radius: 20px;
     height: 450px;
     width: 350px;
     text-align: center;
     background-color: rgba(221, 160, 221, 0.142);
+    position: relative;
   
 }
 .input input{
@@ -96,7 +107,7 @@ cursor: pointer;
 }
 .input i{
     position: absolute;
-    right: 620px;
+    right: 30px;
    
    
     
@@ -107,6 +118,7 @@ cursor: pointer;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  text-shadow: 5px 5px 5px rgb(221, 57, 221);
 }
 #country{
     width:300px;
@@ -133,4 +145,7 @@ border-radius: 50px;
  }
  .input:hover{
     box-shadow:0px 0px 200px #3F5EFB;
+ }
+ .input input:focus{
+    box-shadow:0px 0px 20px #3F5EFB;
  }
